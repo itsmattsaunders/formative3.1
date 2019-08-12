@@ -1,0 +1,28 @@
+{
+  "name": "formative3.1",
+  "version": "1.0.0",
+  "description": "For the assignment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThisIsMattSaunders/formative3.1.git"
+  },
+  "author": "Matt & John",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThisIsMattSaunders/formative3.1/issues"
+  },
+  "homepage": "https://github.com/ThisIsMattSaunders/formative3.1#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-sass": "^1.0.0"
+  }
+}
