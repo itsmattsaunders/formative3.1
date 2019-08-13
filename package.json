@@ -23,6 +23,5 @@
   },
   "devDependencies": {
     "grunt": "^1.0.4",
-    "grunt-contrib-sass": "^1.0.0"
   }
 }
