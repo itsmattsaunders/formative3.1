@@ -1,38 +1,47 @@
 module.exports = function(grunt){
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
-      },
-      dist: {
-        files: {
-          'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
-        }
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'css/',
+            // add bootstrap css here below?
+          src: ['css/style.css', '!*.min.css'],
+          dest: 'css/',
+          ext: '.min.css'
+        }]
       }
+    },
+    uglify:{
+        my_target:{
+            files: {
+                "js/script.min.js":["js/script.js"]
+            }
+        }
     },
     jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+        // add bootstrap js here below?
+      files: ['*.js', 'js/script.js'],
       options: {
-        // options here to override JSHint defaults
         globals: {
           jQuery: true,
-          console: true,
-          module: true,
-          document: true
         }
       }
     },
-    watch: {
-      files: ['<%= jshint.files %>'],
-      tasks: ['jshint', 'qunit']
+    watch:{
+      js: {
+        // add bootstrap min.js here below?
+        files: ['js/script.js', 'js/!.min.js'],
+        tasks: ['jshint', 'uglify']
+      }
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
 
   grunt.registerTask('default', ['jshint', 'uglify']);
 
