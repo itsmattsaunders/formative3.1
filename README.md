@@ -10,7 +10,8 @@ To install everything needed for this project, you need to have a version of **N
 
 In Terminal on your computer:
 >$ git clone https://github.com/ThisIsMattSaunders/formative3.1.git
-$ cd formative3.1
+
+>$ cd formative3.1
 
 In Terminal at the level of the project folder, make a dev branch for yourself.
 >$ git branch yournameDev
@@ -20,8 +21,11 @@ Make sure you're in your dev branch:
 
 Still in Terminal, but now in your local server (vagrant, localhost, etc.):
 >$ npm install
+
 >$ npm install bootstrap
+
 >$ npm install jquery
+
 >$ npm install popper.js
 
 You also need to create a config.json file in your root directory and paste the following into the file. You need to get a News API Key from the News API website (see link above) and then include it in the config.json file.
