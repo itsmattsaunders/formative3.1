@@ -2,7 +2,7 @@
 
 # A ONE-PAGE APP USING NEWS API
 
-[https://newsapi.org/]
+[See News API](https://newsapi.org/)
 
 # INSTALLATION
 

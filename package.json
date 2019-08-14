@@ -1,8 +1,8 @@
 {
   "name": "formative3.1",
   "version": "1.0.0",
-  "description": "For the assignment.",
-  "main": "index.js",
+  "description": "# A ONE-PAGE APP USING NEWS API",
+  "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/ThisIsMattSaunders/formative3.1.git"
   },
-  "author": "Matt & John",
+  "author": "John & Matt",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ThisIsMattSaunders/formative3.1/issues"
@@ -20,8 +20,5 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
-  },
-  "devDependencies": {
-    "grunt": "^1.0.4",
   }
 }
