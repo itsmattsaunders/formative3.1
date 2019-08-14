@@ -1,7 +1,7 @@
-// console.log('js is loading like a little ripper');
+// fetching headline data
 var url = 'https://newsapi.org/v2/top-headlines?' +
           'country=nz&' +
-          'apiKey=83fd1f538a3047bda04b37cfa36c45c3';
+          'apiKey=ADD_API_KEY_HERE';
 var req = new Request(url);
 fetch(req)
     .then(function(response) {
