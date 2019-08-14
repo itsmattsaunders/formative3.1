@@ -6,7 +6,6 @@ module.exports = function(grunt){
         files: [{
           expand: true,
           cwd: 'css/',
-            // add bootstrap css here below?
           src: ['css/style.css', '!*.min.css'],
           dest: 'css/',
           ext: '.min.css'
@@ -16,12 +15,11 @@ module.exports = function(grunt){
     uglify:{
         my_target:{
             files: {
-                "js/script.min.js":["js/script.js"]
+                'js/script.min.js':['js/script.js']
             }
         }
     },
     jshint: {
-        // add bootstrap js here below?
       files: ['*.js', 'js/script.js'],
       options: {
         globals: {
@@ -31,7 +29,6 @@ module.exports = function(grunt){
     },
     watch:{
       js: {
-        // add bootstrap min.js here below?
         files: ['js/script.js', 'js/!.min.js'],
         tasks: ['jshint', 'uglify']
       }
@@ -45,6 +42,4 @@ module.exports = function(grunt){
 
   grunt.registerTask('default', ['jshint', 'uglify']);
 
-
-  });
 };
