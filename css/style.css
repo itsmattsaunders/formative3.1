@@ -13,3 +13,17 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+.headerBox{
+    text-align: center;
+    padding: 25px;
+}
+
+.headerStyle{
+    font-family: courier;
+    font-size: 4rem;
+    color: beige;
+}
+
+#navBar{
+    margin: 20px 0px 0px 20px;
+}

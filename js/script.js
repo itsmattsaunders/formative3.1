@@ -37,12 +37,21 @@ $('#storyButton').click(function(){
                     // newsBox.innerHTML += newsData.articles[i].title, newsData.articles[i].description;
                     // Use bootstrap cards to add image, title, description, link
                     newsBox.innerHTML +=
-                    '<div class="card" style="width: 18rem;">' +
-                          '<div class="card-body">' +
-                            '<h5 class="card-title">'+newsData.articles[i].title+'</h5>'+
-                            '<p class="card-text">'+newsData.articles[i].description+'</p>'+
-                            '<a href="#" class="btn btn-primary">'+newsData.articles[i].url+'</a>'+
-                          '</div> '+'</div>';
+                    // '<div class="card" style="width: 20rem; margin: 25px">' +
+                    //       '<div class="card-body">' +
+                    //         '<h5 class="card-title">'+newsData.articles[i].title+'</h5>'+
+                    //         '<p class="card-text">'+newsData.articles[i].description+'</p>'+
+                    //         // '<button type="button" class="btn btn-secondary">Read more</button>'
+                    //         '<a href="'+newsData.articles[i].url+'" class="btn btn-secondary">Read more</a>'+
+                    //       '</div> '+'</div>';
+
+                    `<div class="card" style="width: 20rem; margin: 25px">
+                          <div class="card-body">
+                            <h5 class="card-title">${newsData.articles[i].title}</h5>
+                            <p class="card-text">${newsData.articles[i].description}</p>
+                            <a href="${newsData.articles[i].url}" class="btn btn-secondary">Read more</a>
+                          </div>
+                         </div>`;
                 }
             },
             error:function(error){
