@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ThisIsMattSaunders/formative3.1#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
   },
