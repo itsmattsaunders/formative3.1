@@ -22,20 +22,21 @@ Make sure you're in your dev branch:
 Still in Terminal, but now in your local server (vagrant, localhost, etc.):
 >$ npm install
 
-This will install Bootstrap, jQuery and Popper.js (which are listed in the package.json file). If/when Grunt is set up, that will also be installed as part of the **npm install** process.
+This will install Bootstrap, jQuery, Popper.js, and Grunt (which are listed in the package.json file) when you type **npm install** in the Terminal.
 
 You also need to create a config.json file in your root directory and paste the following into the file. You need to get a News API Key from the News API website (see link above) and then include it in the config.json file.
-An example file has been given, which you can also duplicate.
+
+Here's how it should look:
 
 >{
-  "newsAPIkey": ""
+  "newsAPIkey": "ADD_API_KEY_HERE"
 }
 
 # STYLE GUIDE
 
 - We are using object-oriented CSS (**OOCSS**) for this project. We aim to write reusable, modular code while writing style separately for content and containers.
 
-- For JavaScript, we use: single quotes for values; camelcase for variable and function names; spaces around operators; 4-space indentation; and other practices recommended by [W3Schools](https://www.w3schools.com/js/js_conventions.asp)
+- For JavaScript, we use: single quotes for values; camelcase for variable and function names; spaces around operators; 4-space indentation; and other practices recommended by [W3Schools](https://www.w3schools.com/js/js_conventions.asp). We are starting to use ES6 for variable and function declarations. 
 
 - We opted not to use SASS to compile our CSS, as this was a small, single-page project. We use **Bootstrap** for CSS.
 

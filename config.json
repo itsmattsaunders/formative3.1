@@ -1,4 +1,5 @@
-/* Need to store API key here and add this filename to .gitignore file */
-{
-  "newsApiKey": "83fd1f538a3047bda04b37cfa36c45c3"
-}
+[
+    {
+        "NEWS_API_KEY":"83fd1f538a3047bda04b37cfa36c45c3"
+    }
+]
