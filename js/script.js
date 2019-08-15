@@ -1,3 +1,4 @@
+
 let newsBox = document.getElementById('newsBox');
   console.log(newsBox);
 $('#storyButton').click(function(){
@@ -48,6 +49,8 @@ $('#storyButton').click(function(){
             error:function(error){
                 console.log("Error");
             }
+
+
 
         });
 
