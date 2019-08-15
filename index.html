@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
       <head>
+
+
             <meta charset="utf-8">
             <title>Formative 3.1 by Matt_and_John</title>
             <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
@@ -12,7 +14,7 @@
                    <h1 class="headerStyle">GREETINGS CITIZEN!</h1>
                    <br>
                    <button type="button" id="storyButton" class="btn btn-secondary btn-lg">Read some NZ news</button>
-                   <button type="button" id="aboutButton" class="btn btn-secondary btn-lg">Learn all about us</button>
+                   <button type="button" id="aboutButton" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#myModal">Learn all about us</button>
                </div>
 
                <div class="row" id="NewsBox">
@@ -20,11 +22,69 @@
                </div>
            </div>
 
+          <div class="row d-flex justify-content-center" id="newsBox">
+
+          </div>
+
+
+             <div id="myModal" class="modal fade bd-example-modal-lg" role="dialog">
+
+
+                        <div class="modal-dialog modal-lg">
+
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title d-flex justify-content-center">About Us</h4>
+
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col">
+                              <p>We are two Web and UX students who are desperately trying to create a single page front-end application that displays
+                              news from across the globe.</p>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col d-flex justify-content-center">
+                              <img class="d-flex justify-content-center" src="images/vinnie.png" width="250" height="300" alt="John">
+                              </div>
+                              <div class="col d-flex justify-content-center">
+                              <img src="images/mattie.png" width="250" height="300" alt="Matt">
+                            </div>
+                            <div class="row">
+                              <div class="col d-flex justify-content-center">
+                                <p class="para">This is John! When he's not studying, raising his children or road cycling. You can find him making films about brotherhood and the underground world of street racing.</p>
+                              </div>
+                              <div class="col d-flex justify-content-center">
+                                <p class="para">This is Matt! When he's not studying, he's probably sleeping or slinging cocktails.</p>
+                            </div>
+                          </div>
+
+             </div>
+             </div>
+
+
+
+             </div>
+         </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
           <script src="node_modules/popper.js/dist/umd/popper.js" charset="utf-8"></script>
-          <script src="node_modules/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
           <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
-          <script src="config.json"></script>
+          <script src="node_modules/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
           <script src="js/script.js" charset="utf-8"></script>
       </body>
 </html>

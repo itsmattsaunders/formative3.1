@@ -1,3 +1,4 @@
+
 *{
   box-sizing: border-box;
   margin: 0, auto;
@@ -25,4 +26,12 @@ body{
 
 #storyButton{
     margin-right: 20px;
+}
+
+.para{
+  margin: 10px;
+}
+
+.card{
+  margin: 10px;
 }
