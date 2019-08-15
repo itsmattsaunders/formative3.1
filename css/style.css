@@ -4,6 +4,14 @@
   padding: 0, auto;
 }
 
-body{
-    background-color: tomato;
+.btn{
+  margin: 10px;
+}
+
+.para{
+  margin: 10px;
+}
+
+.card{
+  margin: 10px;
 }
